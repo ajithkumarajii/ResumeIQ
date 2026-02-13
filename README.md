@@ -1,8 +1,36 @@
 # ResumeIQ - AI-Powered Resume Parser
 
-An intelligent resume parsing application that uses advanced AI to extract structured information from PDF and DOCX resumes instantly.
+[![GitHub](https://img.shields.io/badge/GitHub-ResumeIQ-blue?logo=github)](https://github.com/ajithkumarajii/ResumeIQ)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.8+-yellow)](https://python.org)
+[![React](https://img.shields.io/badge/React-18.2-61dafb?logo=react)](https://react.dev)
 
-## 🚀 Features
+> **Smart Resume Parsing Made Simple** - Instantly extract structured data from resumes using Google Gemini AI
+
+An intelligent resume parsing application that uses advanced AI to extract structured information from PDF and DOCX resumes instantly. Perfect for recruiters, HR professionals, and job seekers.
+
+## 📸 Screenshots
+
+### Landing Page - Dark Modern UI
+![Landing Page](screenshots/landing-page.png)
+
+### Resume Upload Interface
+![Resume Upload](screenshots/upload.png)
+
+### Extracted JSON Results
+![Parsed Results](screenshots/results.png)
+
+## 🌟 Key Highlights
+
+- ⚡ **Lightning Fast** - AI-powered parsing in seconds
+- 🔒 **Privacy First** - No data storage, 100% secure
+- 📄 **Format Support** - PDF & DOCX files
+- 🎯 **Accuracy** - Powered by Google Gemini AI
+- 🚀 **Production Ready** - Deploy to Vercel & Render
+- 🎨 **Modern UI** - Beautiful dark theme with animations
+- 📱 **Responsive** - Works on desktop and mobile
+
+## �🚀 Features
 
 - ⚡ Lightning-fast parsing powered by Google Gemini AI
 - 🔒 100% secure - no data storage or tracking
@@ -13,30 +41,38 @@ An intelligent resume parsing application that uses advanced AI to extract struc
 
 ## 📋 Extracted Data
 
-ResumeIQ extracts the following information:
-- Name
-- Email
-- Phone
-- Skills (array)
-- Education (array)
-- Experience (array)
-- Projects (array)
-- Certifications (array)
+ResumeIQ intelligently extracts the following information:
+
+| Field | Type | Description |
+|-------|------|-------------|
+| **Name** | String | Candidate's full name |
+| **Email** | String | Contact email address |
+| **Phone** | String | Contact phone number |
+| **Skills** | Array | Technical & professional skills |
+| **Education** | Array | Degrees, institutions & dates |
+| **Experience** | Array | Job titles, companies & dates |
+| **Projects** | Array | Notable projects & achievements |
+| **Certifications** | Array | Industry certifications & credentials |
 
 ## 🛠️ Tech Stack
 
 ### Frontend
-- React 18.2.0
-- Framer Motion (animations)
-- React Icons (icons)
-- Axios (HTTP requests)
+| Technology | Purpose |
+|-----------|---------|
+| **React 18.2** | UI library |
+| **Framer Motion** | Smooth animations |
+| **React Icons** | Icon library |
+| **Axios** | HTTP client |
+| **CSS3** | Modern styling |
 
 ### Backend
-- FastAPI (Python web framework)
-- Uvicorn (ASGI server)
-- Google Generative AI (Gemini)
-- pdfplumber (PDF extraction)
-- python-docx (DOCX extraction)
+| Technology | Purpose |
+|-----------|---------|
+| **FastAPI** | Web framework |
+| **Uvicorn** | ASGI server |
+| **Google Gemini AI** | Resume parsing AI |
+| **pdfplumber** | PDF extraction |
+| **python-docx** | DOCX extraction |
 
 ## 📦 Installation
 
@@ -121,11 +157,46 @@ Parse a resume file and extract structured data.
 
 ## 🌐 How to Use
 
-1. Navigate to `http://localhost:3000`
-2. Click "Choose PDF or DOCX" to select your resume
-3. Click "Upload & Parse"
-4. View the extracted JSON data
-5. Copy or download the results
+1. **Open Application**
+   - Navigate to `http://localhost:3000`
+
+2. **Upload Resume**
+   - Click "Choose PDF or DOCX"
+   - Select your resume file
+   - Click "Upload & Parse"
+
+3. **View Results**
+   - See extracted JSON data
+   - Copy or download the JSON
+   - Use in your applications
+
+## 📊 Architecture
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                    ResumeIQ Application                 │
+├─────────────────────────────────────────────────────────┤
+│                                                         │
+│  ┌─────────────────┐           ┌──────────────────┐   │
+│  │  React Frontend │  ◄────►   │  FastAPI Backend │   │
+│  │  (Vercel)       │  HTTP/API │  (Render)        │   │
+│  └─────────────────┘           └──────────────────┘   │
+│         │                               │              │
+│         │                               ▼              │
+│         │                      ┌──────────────────┐   │
+│         │                      │ Google Gemini AI │   │
+│         │                      └──────────────────┘   │
+│         │                                              │
+│         ▼                                              │
+│   Beautiful UI with                 PDF/DOCX          │
+│   • Dark theme                       Extraction       │
+│   • Animations                       & Parsing        │
+│   • Responsive design                                │
+│                                                         │
+└─────────────────────────────────────────────────────────┘
+```
+
+## 🌐 How to Use
 
 ## 🔐 Security
 
