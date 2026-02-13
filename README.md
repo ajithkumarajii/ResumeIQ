@@ -178,8 +178,8 @@ This project is open source and available under the MIT License.
 
 Created with 🔥 AI by [Your Name]
 
-- GitHub: [github.com/yourusername](https://github.com/yourusername)
-- LinkedIn: [linkedin.com/in/yourusername](https://linkedin.com/in/yourusername)
+- GitHub: [github.com/yourusername](https://github.com/ajithkumarajii)
+- LinkedIn: [linkedin.com/in/yourusername](https://linkedin.com/in/ajithkumar-ai)
 
 ## 🙏 Acknowledgments
 
