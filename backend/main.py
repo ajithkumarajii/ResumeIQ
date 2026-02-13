@@ -1,4 +1,3 @@
-import os
 import json
 import pdfplumber
 import google.generativeai as genai
